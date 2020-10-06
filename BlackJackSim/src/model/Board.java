@@ -15,6 +15,8 @@ public class Board {
 	//Pot
 	private long pot;
 	
+	private final int maxPoints = 21;
+	
 	public Board() {
 		cardGen = new Random();
 		aUser = new User();
@@ -37,6 +39,10 @@ public class Board {
 	
 	public boolean getTurn() {
 		return turn;
+	}
+	
+	public int getMaxPoints() {
+		return maxPoints;
 	}
 	
 }
